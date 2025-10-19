@@ -22,7 +22,7 @@ void printArray(const int arr[], int size) {
 
 const int cols = 3;
 
-// void printMatrix(int mat[][], int rows, int cols) {
+// void printMatrix(const int mat[][], int rows, int cols) {
 // While the matrix already defined elsewhere, the compiler still needs to know how to interpret the ref var
 // Touch on ref var
 // C++ needs to know the number of cols to correctly calculate memory offsets
@@ -34,7 +34,7 @@ void printMatrix(int mat[][cols], int rows) {
         for(int col = 0; col < cols; col++) {
             cout << mat[row][col] << " ";
         }
-        cout << "]";
+        cout << "]" << endl;
     }
     cout << "]";
 }

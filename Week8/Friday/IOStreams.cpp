@@ -2,7 +2,7 @@
 #include <fstream> // Part 1: For File I/O Streams
 #include <string> // Part 1: For getline()
 #include <cctype> // Part 2: For helper functions like isupper()
-// #include // Part 3: For stream manipulators like setw()
+#include <iomanip> // Part 3: For stream manipulators like setw()
 
 using namespace std;
 
@@ -121,31 +121,47 @@ void part3() {
     cout << "-----------------------" << endl;
 
     // Step 1: Open output.txt for writing (Without appending)
+    ofstream outFile;
+    outFile.open("output.txt");
 
+    if (!outFile) {
+        cout << "Error opening output.txt" << endl;
+        return;
+    }
 
     // Step 2: Write a line to the file
+    outFile << "This is a sentence." << endl;
 
 
     // Step 3: Close the file
+    outFile.close();
 
 
     // Step 4: Open output.txt again (Without appending)
     // This is to show we can overwrite
+    outFile.open("output.txt");
+    // check if its open
 
 
     // Step 5: Write a line to the file (This will overwrite your original line)
+    outFile << "This is the only line in the file." << endl;
 
 
     // Step 6: Close the file again
+    outFile.close();
 
 
     // Step 7: Open output.txt in append mode and add more lines
-
+    outFile.open("output.txt", fstream::app);
 
     // Step 8: Demonstrate string manipulator with setw
+    outFile << "New line!" << endl;
+    outFile << setw(20) << "Set Width" << endl;
+
 
 
     // Step 9: Don't forget to close the file
+    outFile.close();
 
 }
 
