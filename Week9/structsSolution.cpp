@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=ObUUe9ujYoY */
 
 using namespace std;
 
+// the struct student is technically global, it can be used from any func
 struct student {
     string name;
     double gpa;
@@ -17,6 +18,8 @@ int main() {
         // "Variables in a struct are known as "members""
         // Members are accessed using dot notation
 
+    // student1 is a local variable
+    // student1 is an instance of the student variable type
     student student1;
     student1.name = "Spongebob";
     student1.gpa = 3.2;

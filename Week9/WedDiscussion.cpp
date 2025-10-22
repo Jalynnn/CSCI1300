@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+struct Student {
+    string name;
+    int age;
+}
+
+int main() {
+    Student s;
+    s.name = "Mason";
+    s.age = 20;
+
+    cout << s.name << " is " << s.age << " years old." << endl;
+
+    return 0;
+
+}
+
+
+

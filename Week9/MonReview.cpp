@@ -8,10 +8,12 @@ const int COLS = 4;
 
 // Helper Functions - Print Arrays
 
+// What is const in this parameter? 
 void print1D(const int arr[], int size) {
     cout << "[ ";
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; ++i) { // type of error if i <= size?
         cout << arr[i];
+        // arr[i] = 10;
         if (i + 1 < size) cout << ", ";
     }
     cout << " ]\n";
@@ -30,14 +32,15 @@ void print2D(const int arr[][COLS], int rows, int cols) {
 
 // Focus on 1D Arrays
 
-void init1D(int arr[], int size, int start = 1, int step = 1) {
+void init1D(int arr[], int size, int start, int step) {
     for (int i = 0; i < size; ++i) arr[i] = start + i * step;
 }
 
 bool insertInto1D(int arr[], int &size, int capacity, int index, int value) {
-    if (index < 0 || index > size) return false;    // invalid index
-    if (size >= capacity) return false;             // no room
-    for (int i = size - 1; i >= index; --i) arr[i + 1] = arr[i];
+    if (index < 0 || index > size) return false; // invalid index
+    if (size >= capacity) return false; // no room
+    for (int i = size - 1; i >= index; --i) arr[i + 1] = arr[i]; // Encourage you to draw out the variable changes
+    // [1, 2, 3, 4, 5] --> [1, 2, 3, 3, 4, 5]
     arr[index] = value;
     ++size;
     return true;
@@ -54,7 +57,13 @@ void demo1D_insert_example() {
 
     cout << "Insert 25 at index 2:\n";
     bool ok = insertInto1D(a, size, CAPACITY, 2, 25);
-    cout << (ok ? "Insert succeeded. " : "Insert failed. ");
+
+    if (ok) {
+        cout << "Insert succeeded. ";
+    } else {
+        cout << "Insert failed. ";
+    }
+
     cout << "Now size=" << size << ", array: ";
     print1D(a, size);
 
@@ -68,13 +77,17 @@ void demo1D_insert_example() {
     print1D(a, size);
     cout << "Try insertion when full (should fail): ";
     bool fail = insertInto1D(a, size, CAPACITY, 1, 555);
-    cout << (fail ? "Unexpected success\n" : "Expected failure (no room)\n");
+    if (fail) {
+        cout << "Unexpected success\n";
+    } else {
+        cout << "Expected failure (no room)\n";
+    }
     print1D(a, size);
 }
 
 // Focus on 2D Arrays
 
-void init2D(int arr[][COLS], int rows, int cols, int start = 1) {
+void init2D(int arr[][COLS], int rows, int cols, int start) {
     int v = start;
     for (int r = 0; r < rows; ++r)
         for (int c = 0; c < cols; ++c)
