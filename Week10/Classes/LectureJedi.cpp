@@ -6,15 +6,19 @@
 using namespace std;
 
 // Declare a class called Jedi
+class Jedi {
 
     // Public members here
+    public: 
 
         // let's write the func prototype for our mutator func we looked at today in the slides
+        void setTrain(double hours);
 
         // Here is the func prototype for a helper func we are going to look at
         void helperFunction();
     
     // Private members here
+    private:
 
         // Jedi name
         string name;
@@ -32,13 +36,15 @@ using namespace std;
         int defense_strength;
 
 // What's missing here?
+};
 
 
 
 // Create a setTrain function 
 // that takes in the number of hours the Jedi must train for 
 // and returns nothing
-[Rtn Type] [Class]::[FuncName](/*Define explicit param*/) {
+void Jedi::setTrain(double hours) {
+// [Rtn Type] [Class]::[FuncName](/*Define explicit param*/) {
     // Print a warning if the hours is not positive and exit
     if (hours <= 0) {
         cout << name << " must train for positive hours." << endl;
@@ -57,10 +63,10 @@ using namespace std;
     mana -= hours * 2;
 
     // Add to the attack_strength the hours doubled
-    attack_strength += hours / 2;
+    attack_strength += hours * 2;
 
     // Add to the defense_strength the hours doubled
-    defense_strength += hours / 3;
+    defense_strength += hours * 2;
 }
 
 
@@ -77,7 +83,8 @@ int main() {
     // Note this object is an instance of the class Jedi
     Jedi obi("Obi-Wan", 100, 60, 12, 10);
 
-    // Explicit param?
+    // obi implicit parameter
+    // 5 is the explicit param
     obi.setTrain(5);
 
     return 0;
