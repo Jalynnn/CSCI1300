@@ -1,0 +1,40 @@
+Create a class Library that implements the class definition provided below.
+
+The Library class comprises the following attributes: Data members (private)
+
+Member Type	    Member Name	    Description
+string	        _name	        The name of the Library
+const int	    _MAX_BOOKS	    The maximum number of books the library can hold; will be 10 for this question
+int[]	        _page_counts	Array containing the page counts of books in the library. The size of this array is _MAX_BOOKS
+int	            _current_books	The current number of books in the Library.
+
+NOTE _current_books serves as the insertion index for the _page_counts array.
+
+Member Functions (public)
+
+Function	                Description
+Default constructor	        Creates a new instance of Library by setting _name to an empty string, _current_books to 0, and each entry in _page_counts to 0.
+Library(string)	            Creates a new instance of Library with _name as the string parameter. The _current_books is set to 0, and each entry in the _page_counts array is set to 0.
+Library(string, int[], int)	Creates a new instance of Library with _name as the string parameter, _current_books as the integer parameter, and fills the _page_counts array. See Function Specification table below for more details.
+string getName()	        Returns the _name of the Library.
+int getCurrentBooks()	    Returns the _current_books of the Library.
+void setName(string)	    Sets the _name to the value of the provided string parameter.
+int getPageCount(int)	    Returns the page count at a specified index in _page_counts, or -1 if the index is out of bounds.
+bool addPageCount(int)	    Returns true if the new page count can be added to the _page_counts array. If _current_books is already equal to _MAX_BOOKS, returns false. See Function Specification table below for more details.
+
+
+
+Function Specifications:
+
+Function:	Library(string, int[], int)
+Library(string name, int page_counts[], int arr_size)
+Purpose:	This parameterized constructor creates a new instance of the Library class. 
+- Sets _name to name. 
+- Sets _current_books to arr_size if arr_size doesn’t exceed _MAX_BOOKS; otherwise, _current_books is set to _MAX_BOOKS. 
+- Copies elements from page_counts[] into the _page_counts[] array, up to the size indicated by _current_books.
+Parameters:	string name - The name of the Library. 
+int page_counts[] - Array containing page counts of books in the library. 
+int arr_size - The size of the page_counts[] array.
+ 
+Return Value:	N/A
+Error Handling:	If arr_size exceeds _MAX_BOOKS, only the first _MAX_BOOKSelements are stored in the _page_counts[] array. Do NOT print any other statements to handle this scenario.
