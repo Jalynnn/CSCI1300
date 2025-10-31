@@ -1,8 +1,10 @@
-/* The Blueprint */
+/* The Bluep
+
+rint */
 
 #include<iostream>
 
-using namespace std;
+// using namespace std;
 
 class Jedi{
     public:

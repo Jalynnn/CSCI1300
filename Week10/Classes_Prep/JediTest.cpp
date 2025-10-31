@@ -10,7 +10,7 @@ using namespace std;
 // Both objects are destroyed at the end of the function
 // the luke and annikin in main are unchanged
 // I would use & if I did want them to change
-int battle(Jedi firstJedi, Jedi secondJedi){ 
+int battle(Jedi &firstJedi, Jedi secondJedi){ 
     int damage; 
     while (firstJedi.getHealth() > 0 && secondJedi.getHealth() > 0){ 
         damage = firstJedi.attackEnemy(secondJedi.getDefense()); 

@@ -51,16 +51,16 @@ void Jedi::setName(string newName) {
 // Train increases attack and defense based on hours trained
 void Jedi::setTrain(double hours) {
     if (hours <= 0) {
-        std::cout << name << " must train for positive hours.\n";
+        cout << name << " must train for positive hours.\n";
         return;
     }
 
     if (mana < hours * 2) { // training consumes mana
-        std::cout << name << " is too tired to train that long.\n";
+        cout << name << " is too tired to train that long.\n";
         return;
     }
 
-    std::cout << name << " trains for " << hours << " hours.\n";
+    cout << name << " trains for " << hours << " hours.\n";
     mana -= hours * 2; // consume mana
     if (mana < 0) mana = 0;
 
