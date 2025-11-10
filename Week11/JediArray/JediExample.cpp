@@ -28,7 +28,7 @@ class Jedi {
         Jedi(string n, Lightsaber s, int r)
         : name(n), saber(s), rank(r) {}
 
-        // TODO 2. We call public mem vars directly here
+        // TODO 2. We call public member vars directly here
         void show() const {
             cout << name << " (rank " << rank << ") - "
                 << saber.color << " saber, power " << saber.power << endl;
