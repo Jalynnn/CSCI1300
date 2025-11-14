@@ -15,7 +15,7 @@ int main() {
     // We had to use a for loop and shift elements
 
     // Print elements
-    for (int i = 0; i < train_cars.size(); i++) {
+    for (size_t i = 0; i < train_cars.size(); i++) {
         cout << train_cars[i] << " ";
     }
     cout << endl;
