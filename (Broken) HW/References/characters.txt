@@ -1,0 +1,6 @@
+playerName|age|strength|stamina|wisdom|pridePoints
+Apollo|5|500|500|1000|20000
+Mane|8|900|600|600|20000
+Elsa|12|900|700|500|20000
+Zuri|7|600|500|900|20000
+Roary|18|1000|500|500|20000

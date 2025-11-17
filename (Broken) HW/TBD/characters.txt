@@ -1,0 +1,6 @@
+playerName|experience|accuracy|efficiency|insight|discoveryPoints
+Doctor|5|500|500|1000|20000
+Petridish|8|900|600|600|20000
+Nano|12|900|700|500|20000
+Student|7|600|500|900|20000
+Genius|18|1000|500|500|20000

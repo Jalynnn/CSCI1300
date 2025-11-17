@@ -6,21 +6,36 @@ using namespace std;
 // Write a recursive function shrinkToFive(int n)
 // Keep dividing n by 2
 // Until the value reaches 5 or below
+string shrinkToFive(int n) {
+    if(n <= 5) {
+        return "Base case reached";
+    }
+    else {
+        return shrinkToFive(n / 2);
+    }
+}
 
 // Option 2
 // Write a recursive function growUntilHundred(int n)
 // Keep multiplying by 2
 // Until the number becomes 100 or greater
+int growUntilHundred(int n) {
+    if (n >= 100) {
+        return n;
+    }
+    return growUntilHundred(n * 2);
+}
 
 // Option 3 -- Textbook 5.10 Ex. 5
 // Complete this recursive function
 // Print n '[]' in a row
 // Example: n = 5; [] [] [] [] []
 void print_boxes(int n) {
-    if (...) {
+    cout << "[] ";
+    if (n == 0) {
+        return;
     }
-    cout << ...;
-    print_boxes(...);
+    print_boxes(n-1);
 }
 
 // Option 4 -- Textbook 5.10 Ex. 3
@@ -30,12 +45,12 @@ void print_boxes(int n) {
 string every_second(string s) {
     // Hint: What is the result when the length is 0 or 1? 
     if (s.length() <= 1) {
-        return ...;
+        return s;
     }
     else {
         // Hint: s.substr(k) returns "" when k = s.length()
-        string simpler = every_second(...);
-        return ...;
+        string simpler = every_second(s.substr(2));
+        return s[0] + simpler;
     }
 }
 

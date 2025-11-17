@@ -1,0 +1,55 @@
+Description | PathType (0 = Training Fellowship; 1 = Direct Lab Assignment) | Advisor (0 = none; 1 = Dr. Aliquot; 2 = Dr. Assembler; 3 = Dr. Pop-Gen; 4 = Dr. Bio-Script; 5 = Dr. Loci) | DiscoveryPoints (Lose or Gain)
+
+//Example of Negative Events with Advisor Protection:
+
+A critical DNA sample is contaminated|1|1|-500
+The main DNA sequencer machine breaks down|0|2|-200
+Your bioinformatics script has a bug|1|4|-400
+Your population model overfits! The results are meaningless|0|3|-700
+You spill an entire 96-well plate|1|1|-800
+Data storage server is full|0|2|-300
+Fatigue from long lab hours causes a major error|1|5|-1000
+Your mentor points out a fundamental flaw in your method|0|2|-500
+Budget cuts! The lab is out of your favorite brand of pipettes|1|0|-300
+Failed a pop quiz from your training fellowship mentor|0|5|-800
+Failed an experiment due to the wrong temperature|1|1|-600
+Your data pipeline corrupts a batch of other files|0|4|-800
+Your freezer breaks overnight, ruining 50 samples|1|2|-400
+Your statistical analysis mistakes a lion family group for an unrelated one|0|3|-600
+A lion tracking collar malfunctions, you lose a month of field data|1|0|-700
+Struggled to understand a complex stats model in training|0|5|-500
+The high-performance computer is down for maintenance|1|2|-300
+Misread and label and sequences the wrong lion's DNA|0|4|-500
+Your analysis of a lion's lineage is proven incorrect by new field data|1|3|-400
+A mysterious contamination shows up in your control samples|0|1|-300
+
+//Example of Positive Events:
+
+A tip from Dr. Bio-Script helps your script run 50% faster|1|0|800
+You discover an overlooked, archived tissue sample from a key lion|0|0|600
+A senior scientist praises your lab notes|1|0|500
+Your risky direct assignments pays off with surprisingly clean results|0|0|500
+You help a co-worker debug their sequence alignment code|1|0|700
+A breakthrough! Your new script works on the first try|0|0|300
+Your analysis correctly identifies the two most inbred lions in the population|1|0|1000
+An anonymous donor, impressed by the lion project, funds new sequencers|0|0|400
+You find an extra box of a rare, expensive enzyme|1|0|500
+The lion conservation team sends a "thank you" card for your data|0|0|300
+Sequencing run has an incredibly high quality score|1|0|400
+You finally master Dr. Aliquot's difficult DNA extraction protocol|0|0|600
+A new sample works perfectly for sequencing|1|0|500
+A co-workers shares a bioinformatics script that saves you a day of work|0|0|400
+You identify a rare DNA sequence in the lion population|1|0|500
+A sales rep leaves a box of free pipettes|0|0|600
+Dr. Loci is impressed by your deep understanding of the new sequencer's manual|1|0|600
+Dr. Aliquot's protocol tip doubles your DNA yield|0|0|700
+Use Dr. Bio-Script's C++ trick to automate a boring data-entry task|1|0|500
+Found a calculation error in the lion's genomic database, saving a future analysis|0|0|700
+Your data gets added to the main lion conservation databse|1|0|200
+Your data is used to successfully reunite a lost lion cub with its pride|1|0|400
+Lab-wide pizza party!|0|0|300
+Used Dr. Assembler's workflow to process a whole batch in one afternoon|1|0|500
+You noticed a pattern in the junk DNA|0|0|800
+Your analysis confirms that presence of a new gene variant|1|0|500
+The machine you need is available when you need it|0|0|600
+Your lab received new equipment|1|0|700

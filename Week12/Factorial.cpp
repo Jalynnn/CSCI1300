@@ -11,5 +11,5 @@ int factorial(int n){
 }
 
 int main(){
-    cout << "4! = " << factorial(4) << endl;
+    cout << "8! = " << factorial(8) << endl;
 }

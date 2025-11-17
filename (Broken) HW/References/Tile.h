@@ -1,0 +1,4 @@
+struct Tile
+{
+    char color;
+};

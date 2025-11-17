@@ -2,6 +2,7 @@
 using namespace std;
 
 int fib(int n){
+    cout << n << endl;
     // Base Case
     if (n <= 1) {
         return n;
@@ -15,5 +16,5 @@ int fib(int n){
 }
 
 int main(){
-    cout << "The eighth fibonacci number is: " << fib(8) << endl;
+    cout << "The fourth fibonacci number is: " << fib(4) << endl;
 }

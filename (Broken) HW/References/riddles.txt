@@ -1,0 +1,28 @@
+Question(answer specifications)|Answer
+I can iterate endlessly or break on command. I’m great at looping through tasks. What am I? (single word, lowercase)|loop
+I am the symbol used to compare two values for equality. What am I? (symbol)|==
+I’m a function without a return type. What am I? (single word, lowercase)|void
+I can be true or false, but never both. What am I? (single word, lowercase)|boolean
+I can hold many values, but I’m defined with a single keyword. What am I? (single word, lowercase)|vector
+I’m a class that hides its data, but exposes its behavior. What am I? (single word, lowercase)|object
+I am the first number of an array index in C++. What am I? (integer)|0
+I am the number of bits in a byte. What am I? (integer)|8
+I contain instructions but no emotions. When you debug me, I feel no pain. What am I? (single word, lowercase)|code
+I’m a variable, but I don’t change my value. What am I? (single word, lowercase)|constant
+I’m overloaded but not stressed. What am I? (single word, lowercase)|operator
+I take input, process it, and give output, but I’m not human. What am I? (single word, lowercase)|program
+I split problems into smaller parts to solve them efficiently. What am I? (single word, lowercase)|algorithm
+I’m written in code but never executed. What am I? (single word, lowercase)|comment
+I am the C++ operator used to determine the remainder of a division. What am I? (symbol)|%
+I store values sequentially, but I’m not a line of text. What am I? (single word, lowercase)|array
+I’m the place where local variables go to live and die. What am I? (single word, lowercase)|stack
+I’m a single word, but I can bring a function to life. What am I? (single word, lowercase)|main
+I can compare two things, but I don’t judge. What am I? (single word, lowercase)|if
+I start a comment in C++. What am I? (symbol)|//
+I am the number of spaces a tab character is typically equivalent to. What am I? (integer)|4
+I’m called, but I never come. I’m always executed. What am I? (single word, lowercase)|function
+I protect your program from undefined behavior. What am I? (single word, lowercase)|exception
+I’m a condition that never resolves to true or false. What am I? (single word, lowercase)|infinite
+I am the symbol used to access a member of a class. What am I? (symbol)|.
+I’m an array, but you can’t access me with brackets. I’m full of addresses, but I don’t go anywhere. What am I? (single word, lowercase)|pointer
+I can hold multiple functions, but I’m not a list. What am I? (single word, lowercase)|class

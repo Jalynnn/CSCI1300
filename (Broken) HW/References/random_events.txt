@@ -1,0 +1,59 @@
+Description | PathType (0 = cubTraining; 1 = straight to the pride lands) | Advisor (0 = none; 1 = Rafiki (invisibility); 2 = Nala (night vision); 3 = Sarabi (energy manipulation); 4 = Zazu (weather control); 5 = Sarafina (super speed)) | PridePoints (lose or gain)
+
+
+
+//Example of Negative Events with Advisor Protection:
+
+Desert storm sweeps through the territory|1|4|-500
+Fatigue from intense training with pride warriors|0|3|-200
+Challenging night watch duty under pitch-black conditions|1|2|-400
+Encounter with a rival pride’s ambush|0|3|-700
+Severe drought affecting water sources|1|4|-800
+Minor injury during hunting training|0|3|-300
+Dangerous predator attacks at night|1|2|-1000
+Difficult hunting season during a new moon|0|2|-500
+Failed to secure food during a swift hunt|1|5|-300
+Harsh winds disrupt hunting grounds|0|4|-800
+Encounter with a deadly sandstorm|1|4|-600
+Lost a valuable resource in enemy territory|0|3|-800
+Missed seasonal gathering due to night travel hazards|1|2|-400
+Emergency rescue mission at night|0|1|-600
+Encountered a cunning ambush|1|1|-700
+Injured during a high-energy confrontation|0|3|-500
+Dehydration due to unexpected heatwave|1|4|-300
+Quick escape required from a sudden flood|0|5|-500
+Got lost while tracking prey at dusk|1|2|-400
+Struggled in a difficult chase through dense terrain|0|5|-300
+
+//Example of Positive Events:
+
+Extra energy from bountiful season|1|0|800
+Observed a rare natural phenomenon|0|0|600
+Gained wisdom from observing Rafiki’s rituals|1|0|500
+Celebrated successful hunting expedition|0|0|500
+Guided by a friendly herd of elephants through rough terrain|1|0|700
+Bonding session with pride members strengthens unity|0|0|300
+Victory in territorial boundary dispute|1|0|1000
+Assisted young cubs in training and gained respect|0|0|400
+Restorative gathering at Pride Rock|1|0|500
+Gained insight from Rafiki's stories about the Circle of Life|0|0|300
+Strategic support from Zazu during a storm|1|0|400
+Shared hunting tactics with pride; improved success rate|0|0|600
+Guided by Nala’s night vision during a moonlit hunt|1|0|500
+Gained Sarabi’s strength training tips, increasing endurance|0|0|400
+Safe journey home through Sarafina’s speed|1|0|500
+Supported pride morale during a challenging season|0|0|600
+Alerted to danger by bird allies, avoiding a trap|1|0|600
+Helped an injured elder with Sarabi’s energy healing|0|0|700
+Insightful guidance from Rafiki avoids potential pitfalls|1|0|500
+Celebrated pride unity with a successful ritual|0|0|700
+Received valuable advice from Zazu on weather patterns|1|0|200
+Protected by Nala’s night vision from a nighttime threat|0|0|600
+Assisted in resolving a pride dispute peacefully|1|0|400
+Wisdom gained from a rare encounter with Rafiki|0|0|300
+Received a blessing of strength from Sarabi|1|0|500
+Honored by pride elders for bravery|0|0|800
+Encountered a helpful owl guiding the way at night|1|0|500
+Mentored by seasoned warriors on advanced tactics|0|0|600
+Bonded with pride members during a successful hunt|1|0|700
+Helped restore pride lands with Sarafina’s speed|0|0|500
